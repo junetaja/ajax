@@ -2,22 +2,29 @@
 <head>
 	<title>TES GET</title>
 </head>
-<body ng-app="myApp" ng-controller="tesCtrl">
+<script
+			  src="https://code.jquery.com/jquery-3.1.1.js"
+			  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+			  crossorigin="anonymous">
 
-<input type="text" ng-model="username">
-<input type="text" ng-model="password">
+</script>
+<body>
+
+<input type="text" name="username">
+<input type="text" name="password">
 <button onclick="login()">LOGIN</button>
 
 <script type="text/javascript">
 	
 	var url = "https://150.107.149.186/api/login";
+	var data = {username:$("#username").val(),password:$("#password").val()};
 function login()
 {
 	$.ajax({
 	  type: "POST",
-	  dataType: dataType,
+	  // dataType: dataType,
 	  url: url,
-	  data: [{username: ('#username'), password:('password')}],
+	  data: data,
 	  success: function(response){
 	  	console.log(response);
 	  },
