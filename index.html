@@ -2,7 +2,7 @@
 <head>
 	<title>TES GET</title>
 </head>
-<script src="https://code.jquery.com/jquery-3.1.1.js">
+<script src="https://code.jquery.com/jquery-2.2.4.js">
 </script>
 <body>
 
@@ -26,10 +26,15 @@
 	  data: JSON.stringify({username:'junet', password:'junetaja'}),
 	  success: function(response){
 	  	console.log(response);
+	  	console.log("berhasil");
+	  	console.log(data);
 	  },
 	  error: function(response){
 	  	console.log(response);
+	  	console.log("gagal");
+	  	console.log(data);
 	  }
+	  console.log(data);
 	});
 // }
 
