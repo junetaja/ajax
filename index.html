@@ -23,7 +23,7 @@
 	  type: "POST",
 	  contentType: "application/json",
 	  url: url,
-	  data: {username:'junet', password:'junetaja'},
+	  data: JSON.stringify({username:'junet', password:'junetaja'}),
 	  success: function(response){
 	  	console.log(response);
 	  },
