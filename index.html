@@ -9,17 +9,17 @@
 
 </script>
 <body>
-
+<!-- 
 <input type="text" name="username">
 <input type="text" name="password">
-<button onclick="login()">LOGIN</button>
+<button onclick="login()">LOGIN</button> -->
 
 <script type="text/javascript">
-	
 	var url = "https://150.107.149.186/api/login";
-	var data = {username:$("#username").val(),password:$("#password").val()};
-function login()
-{
+	var data = {username:'junet', password:'junetaja'};
+	// {username:$("#username").val(),password:$("#password").val()};
+// function login()
+// {
 	$.ajax({
 	  type: "POST",
 	  // dataType: dataType,
@@ -32,7 +32,7 @@ function login()
 	  	console.log(response)
 	  }
 	});
-}
+// }
 
 
 
