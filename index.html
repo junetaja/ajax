@@ -9,13 +9,13 @@
 
 <script type="text/javascript">
 	var url = "http://150.107.149.186/api/login";
-	var data = {username:'junet', password:'junetaja'};
-	console.log(data.username);
+	// var data = {username:'junet', password:'junetaja'};
+	// console.log(data.username);
 	console.log("---------");
-	console.log(data.password);
-	console.log("---------");
-	console.log(md5(data.password));
-	console.log("---------");
+	// console.log(data.password);
+	// console.log("---------");
+	// console.log(md5(data.password));
+	// console.log("---------");
 	// {username:$("#username").val(),password:$("#password").val()};
 // function login()
 // {
@@ -23,7 +23,7 @@
 	  type: "POST",
 	  contentType: "application/json",
 	  url: url,
-	  data: data,
+	  data: {username:'junet', password:'junetaja'},
 	  success: function(response){
 	  	console.log(response);
 	  },
